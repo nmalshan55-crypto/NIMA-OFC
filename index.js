@@ -27,7 +27,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const prefix = '.';
-const ownerNumber = ['94776121326'];
+const ownerNumber = ['94713362982'];
 const credsPath = path.join(__dirname, '/auth_info_baileys/creds.json');
 
 async function ensureSessionFile() {
@@ -37,7 +37,7 @@ async function ensureSessionFile() {
       process.exit(1);
     }
 
-    console.log("🔄 creds.json not found. Downloading session from MEGA...");
+    console.log("NIMA-OFC...");
 
     const sessdata = config.SESSION_ID;
     const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
@@ -63,7 +63,7 @@ async function ensureSessionFile() {
 }
 
 async function connectToWA() {
-  console.log("Connecting DANUWA-MD 🧬...");
+  console.log("Connecting NIMA-OFC 🧬...");
   const { state, saveCreds } = await useMultiFileAuthState(path.join(__dirname, '/auth_info_baileys/'));
   const { version } = await fetchLatestBaileysVersion();
 
@@ -85,9 +85,9 @@ async function connectToWA() {
         connectToWA();
       }
     } else if (connection === 'open') {
-      console.log('✅ DANUWA-MD connected to WhatsApp');
+      console.log('✅ NIMA-OFC connected to WhatsApp');
 
-      const up = `DANUWA-MD connected ✅\n\nPREFIX: ${prefix}`;
+      const up = `NIMA-OFC connected ✅\n\nPREFIX: ${prefix}`;
       await danuwa.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
         image: { url: `https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true` },
         caption: up
@@ -179,7 +179,7 @@ async function connectToWA() {
 ensureSessionFile();
 
 app.get("/", (req, res) => {
-  res.send("Hey, DANUWA-MD started✅");
+  res.send("Hey, NIMA-OFC started✅");
 });
 
 app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
