@@ -1,8 +1,8 @@
 {
-  "name": "DANUWA-MD",
-  "description": "Javascript WhatsApp bot made by Danuka Dissanayake",
-  "logo": "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true",
-  "keywords": ["DANUWA-MD"],
+  "name": "NIMA-OFC",
+  "description": "Javascript WhatsApp bot made by NIMSARA MALSHAN",
+  "logo": "https://github.com/nmalshan55-crypto/NIMA-OFC/blob/main/images/file_000000008ae07208bb53224a6bd5e889.png",
+  "keywords": ["NIMA-OFC"],
   "success_url": "/",
 
   "env": {
